@@ -1,0 +1,199 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700,800';
+@import 'https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,600,600i';
+
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+hr {
+  width: 100px;
+  border-width: 2px;
+  border-color: black;
+}
+
+body {
+  margin: 0;
+  font-family: Open Sans;
+}
+body .landing {
+  background: linear-gradient(rgba(0, 0, 75, 0.5), rgba(30, 0, 0, 0.5)), url(https://hd.unsplash.com/photo-1444676632488-26a136c45b9b) center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
+body .navbar {
+  width: 100%;
+  height: 75px;
+  margin-bottom: 0;
+  border-radius: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+body .navbar .nav-img {
+  background-color: blue;
+}
+body .navbar .nav-wrapper {
+  margin: 0 auto;
+  padding: 7px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+body .navbar .nav-wrapper .navbar-left a {
+  color: #fff;
+}
+body .navbar .nav-wrapper .navbar-center {
+  color: #fff;
+}
+body .navbar .nav-wrapper .navbar-center ul {
+  list-style: none;
+}
+body .navbar .nav-wrapper .navbar-center ul li {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+body .navbar .nav-wrapper .navbar-right {
+  color: #fff;
+}
+body .container-fluid.hero-text {
+  padding: 0;
+}
+body .container-fluid.hero-text .hero-img {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+body .container-fluid.hero-text .hero-img h1 {
+  color: white;
+  font-size: 4em;
+  font-style: italic;
+  letter-spacing: 1px;
+  border: 1px solid #fff;
+  padding: 5px 30px 10px;
+  font-family: 'Cormorant Garamond', serif
+}
+body .container-fluid.hero-text .hero-img h3 {
+  font-family: Open Sans;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.content {
+  padding: 40px 0;
+}
+
+.listings {
+  width: 100vw;
+}
+.listings h1 {
+  text-align: center;
+  font-size: 3.5em;
+}
+.listings .listing-title {
+  font-family: Open Sans;
+  font-weight: 400;
+}
+.listings .location {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+.listings .price {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+.listings .details {
+  color: #717171;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+.listings .description {
+  color: #717171;
+  font-weight: 300;
+}
+
+.entry-wrap {
+  padding: 3em 0 3em 0;
+  border-bottom: 1px solid #ccc;
+}
+.entry-wrap .img-wrap {
+  overflow: hidden;
+}
+.entry-wrap .list-img {
+  width: 100%;
+  display: block;
+}
+
+.about {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.about h1 {
+  text-align: center;
+  font-size: 3.5em;
+}
+.about .row {
+  padding: 30px 0;
+  text-align: center;
+}
+.about .bio {
+  font-weight: 300;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.contact {
+  padding: 40px 0;
+  -moz-placeholder-color: #717171;
+  -moz-placeholder-font-weight: 300;
+  -ms-input-placeholder-color: #717171;
+  -ms-input-placeholder-font-weight: 300;
+}
+.contact h1 {
+  text-align: center;
+  font-size: 3.5em;
+}
+.contact .container {
+  max-width: 700px;
+}
+.contact .container .btn-primary {
+  background-color: #343638;
+  border: none;
+  border-radius: 0;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+.contact .container .btn-primary:hover {
+  background-color: #4c4c4c;
+}
+.contact .container .form-group.name {
+  margin-bottom: 0px;
+}
+.contact .container .form-group.button {
+  text-align: center;
+}
+.contact .form-control {
+  border-radius: 0px;
+  box-shadow: none;
+}
+.contact ::-webkit-input-placeholder {
+  color: #717171;
+  font-weight: 300;
+}
+.contact ::-moz-placeholder {
+  color: #717171;
+  font-weight: 300;
+}
