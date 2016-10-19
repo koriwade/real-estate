@@ -2,6 +2,8 @@
   <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" href="script.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -10,14 +12,14 @@
     <img class="nav-img" />
     <div class="nav-wrapper">
       <div class="navbar-left">
-        <a class="logo">Logo</a>
+        <a class="logo">HH</a>
       </div>
       <div class="navbar-center">
         <ul>
-          <li>About</li>
-          <li>Find your dream home</li>
-          <li>Contact</li>
-          <li>Listings</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#home">Find your dream home</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#listings">Listings</a></li>
         <ul>
       </div>
       <div class="navbar-right">
@@ -28,11 +30,13 @@
   <div class="container-fluid hero-text">
     <div class="hero-img">
       <h1>Kathy Wallace</h1>
-      <h3>Realtor</h3>
+      <h3>Realtor&reg;</h3>
+      
   </div>
 </div>
 <section class="content listings">
   <div class="container">
+    <a name="listings"></a>
     <h1>Featured Listings</h1>
     <hr>
     <div id="listing-entry">
@@ -106,7 +110,7 @@
             </a>
           </div>
           <div class="col-sm-8 col-md-7">
-            <h2 class="listing-title">Lot's of Personality</h2>
+            <h2 class="listing-title">It's old looking</h2>
             <p class="location">Salem, Oregon</p>
             <p class="price">$325,000</p>
             <p class="details">5 beds | 3.5 baths | 3,000 square feet</p>
@@ -119,6 +123,7 @@
 </section>
 <section class="content about">
   <div class="container-fluid">
+    <a name="about"></a>
     <h1>About</h1>
     <hr>
   </div>
@@ -141,6 +146,7 @@
 </section>
 <section class="contact">
   <div class="container-fluid">
+    <a name="contact"></a>
     <h1>Contact Me</h1>
     <hr>
   </div>
@@ -179,3 +185,10 @@
     </form>
   </div>
 </section>
+<footer>
+<script>
+  $(window).scroll(function(){
+    $(".hero-text").css("opacity", 1 - $(window).scrollTop() / 450);
+  });
+</script>
+</footer>
